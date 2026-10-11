@@ -18,7 +18,7 @@ async function startBot() {
 
     // طريقة الربط برقم الهاتف (Pairing Code)
     if (!sock.authState.creds.registered) {
-        const phoneNumber = await question('أدخل رقم هاتفك مع رمز الدولة (مثال 201xxxxxxxxx): ');
+        const phoneNumber = "201515143147
         setTimeout(async () => {
             let code = await sock.requestPairingCode(phoneNumber);
             console.log(`\n🔑 كود الاقتران الخاص بك هو: ${code}\n`);
